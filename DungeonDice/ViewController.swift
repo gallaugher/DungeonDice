@@ -34,52 +34,54 @@ class ViewController: UIViewController {
     }
 
     @IBAction func fourSidedPressed(_ sender: UIButton) {
-        let sides: UInt32 = 4
-        let randomNumber = arc4random_uniform(sides) + 1
+        let sides = 4
+        let randomNumber = Int.random(in: 1...sides)
         let message = "You rolled a " + String(sides) + " sided dice and got a " + String(randomNumber)
         resultLabel.text = message
     }
     
     @IBAction func sixSidedPressed(_ sender: UIButton) {
-        let sides: UInt32 = 6
-        let randomNumber = arc4random_uniform(sides) + 1
+        let sides = 6
+        let randomNumber = Int.random(in: 1...sides)
         let message = "You rolled a " + String(sides) + " sided dice and got a " + String(randomNumber)
         resultLabel.text = message
     }
     
     @IBAction func eightSidedPressed(_ sender: UIButton) {
-        let sides: UInt32 = 8
-        let randomNumber = arc4random_uniform(sides) + 1
+        let sides = 8
+        let randomNumber = Int.random(in: 1...sides)
         let message = "You rolled a " + String(sides) + " sided dice and got a " + String(randomNumber)
         resultLabel.text = message
     }
 
     @IBAction func tenSidedPressed(_ sender: UIButton) {
-        let sides: UInt32 = 10
-        let randomNumber = arc4random_uniform(sides) + 1
+        let sides = 10
+        let randomNumber = Int.random(in: 1...sides)
         let message = "You rolled a " + String(sides) + " sided dice and got a " + String(randomNumber)
         resultLabel.text = message
     }
     
     @IBAction func twelveSIdedPressed(_ sender: UIButton) {
-        let sides: UInt32 = 12
-        let randomNumber = arc4random_uniform(sides) + 1
+        let sides = 12
+        let randomNumber = Int.random(in: 1...sides)
         let message = "You rolled a " + String(sides) + " sided dice and got a " + String(randomNumber)
         resultLabel.text = message
     }
     
     @IBAction func twentySidedPressed(_ sender: UIButton) {
-        let sides: UInt32 = 20
-        let randomNumber = arc4random_uniform(sides) + 1
+        let sides = 20
+        let randomNumber = Int.random(in: 1...sides)
         let message = "You rolled a " + String(sides) + " sided dice and got a " + String(randomNumber)
         resultLabel.text = message
+
     }
     
     @IBAction func hundredSidedPressed(_ sender: UIButton) {
-        let sides: UInt32 = 100
-        let randomNumber = arc4random_uniform(sides) + 1
+        let sides = 100
+        let randomNumber = Int.random(in: 1...sides)
         let message = "You rolled a " + String(sides) + " sided dice and got a " + String(randomNumber)
         resultLabel.text = message
+
     }
 }
 
